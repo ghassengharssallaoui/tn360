@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CommunicationPreferences extends StatefulWidget {
-  const CommunicationPreferences({Key? key}) : super(key: key);
+class LogOut extends StatefulWidget {
+  const LogOut({Key? key}) : super(key: key);
 
   @override
-  LogOut createState() => LogOut();
+  _LogOutState createState() => _LogOutState();
 }
 
-class LogOut extends State<CommunicationPreferences> {
+class _LogOutState extends State<LogOut> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

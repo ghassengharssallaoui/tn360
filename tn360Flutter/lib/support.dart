@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CommunicationPreferences extends StatefulWidget {
-  const CommunicationPreferences({Key? key}) : super(key: key);
+class Support extends StatefulWidget {
+  const Support({Key? key}) : super(key: key);
 
   @override
-  Support createState() => Support();
+  _SupportState createState() => _SupportState();
 }
 
-class Support extends State<CommunicationPreferences> {
+class _SupportState extends State<Support> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

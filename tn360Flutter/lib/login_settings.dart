@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CommunicationPreferences extends StatefulWidget {
-  const CommunicationPreferences({Key? key}) : super(key: key);
+class LoginSettings extends StatefulWidget {
+  const LoginSettings({Key? key}) : super(key: key);
 
   @override
-  LoginSettings createState() => LoginSettings();
+  _LoginSettingsState createState() => _LoginSettingsState();
 }
 
-class LoginSettings extends State<CommunicationPreferences> {
+class _LoginSettingsState extends State<LoginSettings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

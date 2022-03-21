@@ -145,7 +145,9 @@ class _ProfilePageState extends State<ProfilePage> {
 
           Expanded(
             child: FlatButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pushNamed(context, '/payment_option');
+              },
               color: Colors.white,
               child: Row(
                 children: [
@@ -161,7 +163,9 @@ class _ProfilePageState extends State<ProfilePage> {
 
           Expanded(
             child: FlatButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pushNamed(context, '/invoice_details');
+              },
               color: Colors.white,
               child: Row(
                 children: [
@@ -169,6 +173,74 @@ class _ProfilePageState extends State<ProfilePage> {
                     Icons.sticky_note_2_outlined,
                   ),
                   Expanded(child: Text("Invoice Details")),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            child: FlatButton(
+              onPressed: (){
+                Navigator.pushNamed(context, '/communication_preferences');
+              },
+              color: Colors.white,
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.sticky_note_2_outlined,
+                  ),
+                  Expanded(child: Text("Communication Preferences")),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            child: FlatButton(
+              onPressed: (){
+                Navigator.pushNamed(context, '/login_settings');
+              },
+              color: Colors.white,
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.sticky_note_2_outlined,
+                  ),
+                  Expanded(child: Text("Login Settings")),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            child: FlatButton(
+              onPressed: (){
+                Navigator.pushNamed(context, '/support');
+              },
+              color: Colors.white,
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.sticky_note_2_outlined,
+                  ),
+                  Expanded(child: Text("Support")),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            child: FlatButton(
+              onPressed: (){
+                Navigator.pushNamed(context, '/log_out');
+              },
+              color: Colors.white,
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.sticky_note_2_outlined,
+                  ),
+                  Expanded(child: Text("Log Out")),
                   Icon(Icons.arrow_forward_ios),
                 ],
               ),
