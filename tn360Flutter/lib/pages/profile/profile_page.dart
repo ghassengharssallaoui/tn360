@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:tn360/addresses.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -91,7 +91,9 @@ class _ProfilePageState extends State<ProfilePage> {
 
           Expanded(
             child: FlatButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pushNamed(context, '/addresses');
+              },
               color: Colors.white,
               child: Row(
                 children: [
@@ -107,7 +109,9 @@ class _ProfilePageState extends State<ProfilePage> {
 
           Expanded(
             child: FlatButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pushNamed(context, '/favourite_products');
+              },
               color: Colors.white,
               child: Row(
                 children: [
@@ -123,7 +127,9 @@ class _ProfilePageState extends State<ProfilePage> {
 
           Expanded(
             child: FlatButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pushNamed(context, '/previous_orders');
+              },
               color: Colors.white,
               child: Row(
                 children: [
