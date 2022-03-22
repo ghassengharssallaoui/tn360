@@ -37,213 +37,187 @@ class _ProfilePageState extends State<ProfilePage> {
         body:Column(
           
         children: [
-          Expanded(
-            child: Row(
-              children: [
-                SizedBox(height: 80.0),
-                CircleAvatar(
-                  backgroundImage: AssetImage('assets/image/avatar.png'),
-                  radius: 40.0,
-                ),
-                SizedBox(width: 20.0),
-                Text("Ghassen Gharssallaoui")
-              ],
-            ),
+          Row(
+            children: [
+              SizedBox(height: 80.0),
+              CircleAvatar(
+                backgroundImage: AssetImage('assets/image/avatar.png'),
+                radius: 40.0,
+              ),
+              SizedBox(width: 20.0),
+              Text("Ghassen Gharssallaoui")
+            ],
           ),
-          Expanded(child: Divider(color: Colors.black)),
-          Expanded(
-            child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail_outline,
-                    ),
-                    Expanded(child: Text("gassen@email.com")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                )
-            ),
-          ),
-          Expanded(
-            child: FlatButton(
+          Divider(color: Colors.black),
+          FlatButton(
               onPressed: (){},
               color: Colors.white,
               child: Row(
+                children: [
+                  Icon(
+                    Icons.mail_outline,
+                  ),
+                  Expanded(child: Text("gassen@email.com")),
+                  Icon(Icons.arrow_forward_ios),
+                ],
+              )
+          ),
+          FlatButton(
+            onPressed: (){},
+            color: Colors.white,
+            child: Row(
+            children: [
+            Icon(
+              Icons.phone_android_sharp,
+            ),
+              Expanded(child: Text("+216 20 000 000")),
+              Icon(Icons.arrow_forward_ios),
+            ],
+            ),
+          ),
+          Container(
+            height: 30.0,
+            width: 1000.0,
+            color: Colors.grey[100],
+          ),
+
+          FlatButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/addresses');
+            },
+            color: Colors.white,
+            child: Row(
               children: [
-              Icon(
-                Icons.phone_android_sharp,
-              ),
-                Expanded(child: Text("+216 20 000 000")),
+                Icon(
+                  Icons.location_on_outlined,
+                ),
+                Expanded(child: Text("My Adresses")),
                 Icon(Icons.arrow_forward_ios),
               ],
-              ),
-            ),
-          ),
-          Expanded(
-            child: Container(
-              height: 30.0,
-              width: 1000.0,
-              color: Colors.grey[100],
             ),
           ),
 
-          Expanded(
-            child: FlatButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/addresses');
-              },
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.location_on_outlined,
-                  ),
-                  Expanded(child: Text("My Adresses")),
-                  Icon(Icons.arrow_forward_ios),
-                ],
-              ),
+          FlatButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/favourite_products');
+            },
+            color: Colors.white,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.favorite_border,
+                ),
+                Expanded(child: Text(" Favourite Products")),
+                Icon(Icons.arrow_forward_ios),
+              ],
             ),
           ),
 
-          Expanded(
-            child: FlatButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/favourite_products');
-              },
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.favorite_border,
-                  ),
-                  Expanded(child: Text(" Favourite Products")),
-                  Icon(Icons.arrow_forward_ios),
-                ],
-              ),
+          FlatButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/previous_orders');
+            },
+            color: Colors.white,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.shopping_cart_outlined,
+                ),
+                Expanded(child: Text(" Previous Orders")),
+                Icon(Icons.arrow_forward_ios),
+              ],
             ),
           ),
 
-          Expanded(
-            child: FlatButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/previous_orders');
-              },
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.shopping_cart_outlined,
-                  ),
-                  Expanded(child: Text(" Previous Orders")),
-                  Icon(Icons.arrow_forward_ios),
-                ],
-              ),
+          FlatButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/payment_option');
+            },
+            color: Colors.white,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.payment,
+                ),
+                Expanded(child: Text("Payment Options")),
+                Icon(Icons.arrow_forward_ios),
+              ],
             ),
           ),
 
-          Expanded(
-            child: FlatButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/payment_option');
-              },
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.payment,
-                  ),
-                  Expanded(child: Text("Payment Options")),
-                  Icon(Icons.arrow_forward_ios),
-                ],
-              ),
+          FlatButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/invoice_details');
+            },
+            color: Colors.white,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.sticky_note_2_outlined,
+                ),
+                Expanded(child: Text("Invoice Details")),
+                Icon(Icons.arrow_forward_ios),
+              ],
             ),
           ),
-
-          Expanded(
-            child: FlatButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/invoice_details');
-              },
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.sticky_note_2_outlined,
-                  ),
-                  Expanded(child: Text("Invoice Details")),
-                  Icon(Icons.arrow_forward_ios),
-                ],
-              ),
+          FlatButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/communication_preferences');
+            },
+            color: Colors.white,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.sticky_note_2_outlined,
+                ),
+                Expanded(child: Text("Communication Preferences")),
+                Icon(Icons.arrow_forward_ios),
+              ],
             ),
           ),
-          Expanded(
-            child: FlatButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/communication_preferences');
-              },
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.sticky_note_2_outlined,
-                  ),
-                  Expanded(child: Text("Communication Preferences")),
-                  Icon(Icons.arrow_forward_ios),
-                ],
-              ),
+          FlatButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/login_settings');
+            },
+            color: Colors.white,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.sticky_note_2_outlined,
+                ),
+                Expanded(child: Text("Login Settings")),
+                Icon(Icons.arrow_forward_ios),
+              ],
             ),
           ),
-          Expanded(
-            child: FlatButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/login_settings');
-              },
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.sticky_note_2_outlined,
-                  ),
-                  Expanded(child: Text("Login Settings")),
-                  Icon(Icons.arrow_forward_ios),
-                ],
-              ),
+          FlatButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/support');
+            },
+            color: Colors.white,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.sticky_note_2_outlined,
+                ),
+                Expanded(child: Text("Support")),
+                Icon(Icons.arrow_forward_ios),
+              ],
             ),
           ),
-          Expanded(
-            child: FlatButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/support');
-              },
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.sticky_note_2_outlined,
-                  ),
-                  Expanded(child: Text("Support")),
-                  Icon(Icons.arrow_forward_ios),
-                ],
-              ),
-            ),
-          ),
-          Expanded(
-            child: FlatButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/log_out');
-              },
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.sticky_note_2_outlined,
-                  ),
-                  Expanded(child: Text("Log Out")),
-                  Icon(Icons.arrow_forward_ios),
-                ],
-              ),
+          FlatButton(
+            onPressed: (){
+              Navigator.pushNamed(context, '/log_out');
+            },
+            color: Colors.white,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.sticky_note_2_outlined,
+                ),
+                Expanded(child: Text("Log Out")),
+                Icon(Icons.arrow_forward_ios),
+              ],
             ),
           ),
         ],
