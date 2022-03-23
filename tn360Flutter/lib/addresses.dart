@@ -36,137 +36,95 @@ class _MyAddressesState extends State<MyAddresses> {
         body:Column(
 
           children: [
-            Expanded(
-              child: Row(
-                children: [
-                  SizedBox(height: 80.0),
-                  CircleAvatar(
-                    //backgroundImage: AssetImage('assets/image/avatar.png'),
-                    radius: 40.0,
-                  ),
-                  SizedBox(width: 20.0),
-                  Text("Ghassen Gharssallaoui")
-                ],
-              ),
-            ),
-            Expanded(child: Divider(color: Colors.black)),
-            Expanded(
-              child: FlatButton(
+
+             FlatButton(
+                 padding: EdgeInsets.all(15.0),
                   onPressed: (){},
                   color: Colors.white,
                   child: Row(
                     children: [
                       Icon(
-                        Icons.mail_outline,
+                        Icons.holiday_village ,
                       ),
-                      Expanded(child: Text("gassen@email.com")),
-                      Icon(Icons.arrow_forward_ios),
+                      Expanded(child: Text("")),
+                      Icon(Icons.delete_outline),
                     ],
                   )
-              ),
+
             ),
-            Expanded(
-              child: FlatButton(
+
+               FlatButton(
+                 padding: EdgeInsets.all(15.0),
                 onPressed: (){},
                 color: Colors.white,
                 child: Row(
                   children: [
                     Icon(
-                      Icons.phone_android_sharp,
+                      Icons.house_outlined,
                     ),
-                    Expanded(child: Text("+216 20 000 000")),
-                    Icon(Icons.arrow_forward_ios),
+                    Expanded(child: Text("")),
+                    Icon(Icons.delete_outline),
                   ],
                 ),
-              ),
+
             ),
-            Expanded(
-              child: Container(
+
+               Container(
                 height: 30.0,
                 width: 1000.0,
                 color: Colors.grey[100],
-              ),
+
             ),
 
-            Expanded(
-              child: FlatButton(
+             FlatButton(
+               padding: EdgeInsets.all(15.0),
                 onPressed: (){},
                 color: Colors.white,
                 child: Row(
                   children: [
                     Icon(
-                      Icons.location_on_outlined,
+                      Icons.house_outlined,
                     ),
-                    Expanded(child: Text("My Adresses")),
-                    Icon(Icons.arrow_forward_ios),
+                    Expanded(child: Text(" Add home address")),
+                    Icon(Icons.add),
                   ],
                 ),
               ),
-            ),
 
-            Expanded(
-              child: FlatButton(
+
+             FlatButton(
+               padding: EdgeInsets.all(15.0),
                 onPressed: (){},
                 color: Colors.white,
                 child: Row(
                   children: [
                     Icon(
-                      Icons.favorite_border,
+                      Icons.business,
                     ),
-                    Expanded(child: Text(" Favourite Products")),
-                    Icon(Icons.arrow_forward_ios),
+                    Expanded(child: Text(" Add home address")),
+                    Icon(Icons.add),
                   ],
                 ),
               ),
-            ),
 
-            Expanded(
-              child: FlatButton(
+
+            FlatButton(
+              padding: EdgeInsets.all(15.0),
                 onPressed: (){},
                 color: Colors.white,
                 child: Row(
                   children: [
                     Icon(
-                      Icons.shopping_cart_outlined,
+                      Icons.holiday_village,
                     ),
-                    Expanded(child: Text(" Previous Orders")),
-                    Icon(Icons.arrow_forward_ios),
+                    Expanded(child: Text(" Add home address")),
+                    Icon(Icons.add),
                   ],
                 ),
               ),
-            ),
 
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.payment,
-                    ),
-                    Expanded(child: Text("Payment Options")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                ),
-              ),
-            ),
 
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.sticky_note_2_outlined,
-                    ),
-                    Expanded(child: Text("Invoice Details")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                ),
-              ),
-            ),
+
           ],
         )
     );
