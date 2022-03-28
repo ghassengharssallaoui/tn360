@@ -36,135 +36,30 @@ class _PaymentOptionState extends State<PaymentOption> {
         body:Column(
 
           children: [
-            Expanded(
+            FlatButton(
+                onPressed: (){},
+                color: Colors.white,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.credit_card,
+                    ),
+                    Expanded(child: Text(" Credit card")),
+                    Icon(Icons.arrow_forward_ios),
+                  ],
+                )
+            ),
+            FlatButton(
+              onPressed: (){},
+              color: Colors.white,
               child: Row(
                 children: [
-                  SizedBox(height: 80.0),
-                  CircleAvatar(
-                    //backgroundImage: AssetImage('assets/image/avatar.png'),
-                    radius: 40.0,
+                  Icon(
+                    Icons.attach_money_rounded,
                   ),
-                  SizedBox(width: 20.0),
-                  Text("Ghassen Gharssallaoui")
+                  Expanded(child: Text(" Cash")),
+                  Icon(Icons.arrow_forward_ios),
                 ],
-              ),
-            ),
-            Expanded(child: Divider(color: Colors.black)),
-            Expanded(
-              child: FlatButton(
-                  onPressed: (){},
-                  color: Colors.white,
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.mail_outline,
-                      ),
-                      Expanded(child: Text("gassen@email.com")),
-                      Icon(Icons.arrow_forward_ios),
-                    ],
-                  )
-              ),
-            ),
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone_android_sharp,
-                    ),
-                    Expanded(child: Text("+216 20 000 000")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                height: 30.0,
-                width: 1000.0,
-                color: Colors.grey[100],
-              ),
-            ),
-
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.location_on_outlined,
-                    ),
-                    Expanded(child: Text("My Adresses")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                ),
-              ),
-            ),
-
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.favorite_border,
-                    ),
-                    Expanded(child: Text(" Favourite Products")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                ),
-              ),
-            ),
-
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.shopping_cart_outlined,
-                    ),
-                    Expanded(child: Text(" Previous Orders")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                ),
-              ),
-            ),
-
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.payment,
-                    ),
-                    Expanded(child: Text("Payment Options")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                ),
-              ),
-            ),
-
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.sticky_note_2_outlined,
-                    ),
-                    Expanded(child: Text("Invoice Details")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                ),
               ),
             ),
           ],

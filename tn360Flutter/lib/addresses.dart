@@ -101,7 +101,7 @@ class _MyAddressesState extends State<MyAddresses> {
                     Icon(
                       Icons.business,
                     ),
-                    Expanded(child: Text(" Add home address")),
+                    Expanded(child: Text(" Add work address")),
                     Icon(Icons.add),
                   ],
                 ),
@@ -117,7 +117,7 @@ class _MyAddressesState extends State<MyAddresses> {
                     Icon(
                       Icons.holiday_village,
                     ),
-                    Expanded(child: Text(" Add home address")),
+                    Expanded(child: Text(" Add other address")),
                     Icon(Icons.add),
                   ],
                 ),

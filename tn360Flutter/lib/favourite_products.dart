@@ -34,141 +34,86 @@ class _FavouriteProductsState extends State<FavouriteProducts> {
 
         ),
         body:Column(
-
           children: [
-            Expanded(
-              child: Row(
-                children: [
-                  SizedBox(height: 80.0),
-                  CircleAvatar(
-                    //backgroundImage: AssetImage('assets/image/avatar.png'),
-                    radius: 40.0,
-                  ),
-                  SizedBox(width: 20.0),
-                  Text("Ghassen Gharssallaoui")
-                ],
-              ),
-            ),
-            Expanded(child: Divider(color: Colors.black)),
-            Expanded(
-              child: FlatButton(
-                  onPressed: (){},
-                  color: Colors.white,
-                  child: Row(
+            Row(
+              children: [
+                SizedBox(height:  90.0,width: 60.0,),
+                Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.redAccent,
+                  child: Column(
                     children: [
-                      Icon(
-                        Icons.mail_outline,
+                       Text("product 1"),
+                       Padding(
+                         padding: const EdgeInsets.all(8.0),
+                         child: Text("2.300"),
+                       ),
+                      FloatingActionButton(onPressed: (){},
+                      child: Icon(Icons.add),
                       ),
-                      Expanded(child: Text("gassen@email.com")),
-                      Icon(Icons.arrow_forward_ios),
                     ],
                   )
-              ),
-            ),
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone_android_sharp,
-                    ),
-                    Expanded(child: Text("+216 20 000 000")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
                 ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                height: 30.0,
-                width: 1000.0,
-                color: Colors.grey[100],
-              ),
-            ),
-
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.location_on_outlined,
-                    ),
-                    Expanded(child: Text("My Adresses")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
+                SizedBox(width: 30.0),
+                Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.yellowAccent,
+                    child: Column(
+                      children: [
+                        Text("product 2"),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text("5.250"),
+                        ),
+                        FloatingActionButton(onPressed: (){},
+                          child: Icon(Icons.add),
+                        ),
+                      ],
+                    )
                 ),
-              ),
+              ],
             ),
-
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.favorite_border,
-                    ),
-                    Expanded(child: Text(" Favourite Products")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
+            SizedBox(height:  90.0,width: 60.0,),
+            Row(
+              children: [
+                SizedBox(height:  90.0,width: 60.0,),
+                Container(
+                    padding: EdgeInsets.all(30.0),
+                    color: Colors.greenAccent,
+                    child: Column(
+                      children: [
+                        Text("product 3"),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text("1.900"),
+                        ),
+                        FloatingActionButton(onPressed: (){},
+                          child: Icon(Icons.add),
+                        ),
+                      ],
+                    )
                 ),
-              ),
-            ),
-
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.shopping_cart_outlined,
-                    ),
-                    Expanded(child: Text(" Previous Orders")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
+                SizedBox(width: 30.0),
+                Container(
+                    padding: EdgeInsets.all(30.0),
+                    color: Colors.blueAccent,
+                    child: Column(
+                      children: [
+                        Text("product 4"),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text("2.700"),
+                        ),
+                        FloatingActionButton(onPressed: (){},
+                          child: Icon(Icons.add),
+                        ),
+                      ],
+                    )
                 ),
-              ),
-            ),
-
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.payment,
-                    ),
-                    Expanded(child: Text("Payment Options")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                ),
-              ),
-            ),
-
-            Expanded(
-              child: FlatButton(
-                onPressed: (){},
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.sticky_note_2_outlined,
-                    ),
-                    Expanded(child: Text("Invoice Details")),
-                    Icon(Icons.arrow_forward_ios),
-                  ],
-                ),
-              ),
-            ),
+              ],
+            )
           ],
-        )
+        ),
     );
   }
 }

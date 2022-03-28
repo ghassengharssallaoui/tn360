@@ -154,22 +154,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ),
 
-            FlatButton(
-              padding: EdgeInsets.all(15.0),
-              onPressed: (){
-                Navigator.pushNamed(context, '/invoice_details');
-              },
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.sticky_note_2_outlined,
-                  ),
-                  Expanded(child: Text("Invoice Details")),
-                  Icon(Icons.arrow_forward_ios),
-                ],
-              ),
-            ),
+
             FlatButton(
               padding: EdgeInsets.all(15.0),
               onPressed: (){
